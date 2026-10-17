@@ -53,9 +53,11 @@ The small-sample flag below 30 scored records is an arbitrary educational remind
 
 The report includes explicit numerators/denominators, row eligibility reasons, policy version, cutoff, threshold and a canonical SHA-256 input fingerprint. Reordering records does not change the report. The full fingerprint includes all synthetic input records, even outcomes ineligible at that cutoff; only eligible labels influence the performance calculations.
 
-On **2026-10-17**, **39 automated tests** and **10 local browser checks** passed. Tests cover independently specified confusion counts, threshold boundaries, class imbalance, undefined metrics, cutoff/window rules, future labels, invalid inputs, deterministic output and unchanged inputs. The public site is also checked after deployment.
+On **2026-10-17**, **39 automated tests** and **10 local browser checks** passed. Tests cover independently specified confusion counts, threshold boundaries, class imbalance, undefined metrics, cutoff/window rules, future labels, invalid inputs, deterministic output and unchanged inputs. **4 deployed browser checks** also passed.
 
-Evidence: [automated test report](docs/test-report.txt), [browser checks](docs/browser-checks.json), [recorded sample reports](docs/sample-results.json).
+Evidence: [automated test report](docs/test-report.txt), [browser checks](docs/browser-checks.json), [deployed checks](docs/hosted-checks.json), [recorded sample reports](docs/sample-results.json).
+
+See the [delivery and publication record](docs/DELIVERY.md) for hosting, portfolio status, LinkedIn scheduling and the related public demo catalogue.
 
 ## Run or build
 
