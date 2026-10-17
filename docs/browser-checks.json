@@ -1,0 +1,131 @@
+[
+  {
+    "dataset": "mixed",
+    "threshold": 0.5,
+    "cutoff": "2026-01-15",
+    "counts": {
+      "tp": 3,
+      "fp": 2,
+      "tn": 2,
+      "fn": 1,
+      "pending": 3,
+      "unlabelled": 1,
+      "excluded": 1
+    },
+    "scored": 8
+  },
+  {
+    "dataset": "mixed",
+    "threshold": 0.75,
+    "cutoff": "2026-01-15",
+    "counts": {
+      "tp": 2,
+      "fp": 0,
+      "tn": 4,
+      "fn": 2,
+      "pending": 3,
+      "unlabelled": 1,
+      "excluded": 1
+    },
+    "scored": 8
+  },
+  {
+    "dataset": "mixed",
+    "threshold": 0,
+    "cutoff": "2026-01-15",
+    "counts": {
+      "tp": 4,
+      "fp": 4,
+      "tn": 0,
+      "fn": 0,
+      "pending": 3,
+      "unlabelled": 1,
+      "excluded": 1
+    },
+    "scored": 8
+  },
+  {
+    "dataset": "mixed",
+    "threshold": 1,
+    "cutoff": "2026-01-15",
+    "counts": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 4,
+      "fn": 4,
+      "pending": 3,
+      "unlabelled": 1,
+      "excluded": 1
+    },
+    "scored": 8
+  },
+  {
+    "dataset": "imbalanced",
+    "threshold": 0.5,
+    "cutoff": "2026-01-15",
+    "counts": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 19,
+      "fn": 1,
+      "pending": 0,
+      "unlabelled": 0,
+      "excluded": 0
+    },
+    "scored": 20
+  },
+  {
+    "dataset": "unlabelled",
+    "threshold": 0.5,
+    "cutoff": "2026-01-15",
+    "counts": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 0,
+      "fn": 0,
+      "pending": 0,
+      "unlabelled": 4,
+      "excluded": 0
+    },
+    "scored": 0
+  },
+  {
+    "dataset": "positive-only",
+    "threshold": 0.5,
+    "cutoff": "2026-01-15",
+    "counts": {
+      "tp": 2,
+      "fp": 0,
+      "tn": 0,
+      "fn": 2,
+      "pending": 0,
+      "unlabelled": 0,
+      "excluded": 0
+    },
+    "scored": 4
+  },
+  {
+    "dataset": "mixed",
+    "threshold": 0.5,
+    "cutoff": "2026-02-15",
+    "counts": {
+      "tp": 4,
+      "fp": 2,
+      "tn": 2,
+      "fn": 1,
+      "pending": 1,
+      "unlabelled": 3,
+      "excluded": 0
+    },
+    "scored": 9
+  },
+  {
+    "scenario": "errors-filter",
+    "shown": 3,
+    "scored": 9
+  },
+  {
+    "scenario": "reload-defaults",
+    "threshold": 0.5
+  }
+]

@@ -1,0 +1,828 @@
+{
+  "synthetic": true,
+  "results": [
+    {
+      "dataset": "mixed",
+      "report": {
+        "synthetic": true,
+        "notice": "Synthetic predictions and outcomes only. No real model performance, client results or LLM calls.",
+        "policy": "synthetic-binary-eval-v1",
+        "asOf": "2026-01-15",
+        "threshold": 0.5,
+        "inputFingerprint": "e194770e8afb5739d3130ce34ae8347df63d5d4380463d9467415140bc078843",
+        "counts": {
+          "tp": 3,
+          "fp": 2,
+          "tn": 2,
+          "fn": 1,
+          "pending": 3,
+          "unlabelled": 1,
+          "excluded": 1
+        },
+        "scored": 8,
+        "total": 13,
+        "eligible": 12,
+        "metrics": {
+          "accuracy": {
+            "numerator": 5,
+            "denominator": 8,
+            "value": 0.625
+          },
+          "precision": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          },
+          "recall": {
+            "numerator": 3,
+            "denominator": 4,
+            "value": 0.75
+          },
+          "specificity": {
+            "numerator": 2,
+            "denominator": 4,
+            "value": 0.5
+          },
+          "f1": {
+            "numerator": 6,
+            "denominator": 9,
+            "value": 0.6666666666666666
+          },
+          "coverage": {
+            "numerator": 8,
+            "denominator": 12,
+            "value": 0.6666666666666666
+          },
+          "majorityBaseline": {
+            "numerator": 4,
+            "denominator": 8,
+            "value": 0.5
+          }
+        },
+        "balancedAccuracy": 0.625,
+        "smallSample": true,
+        "warnings": [
+          "Small illustrative sample: fewer than 30 scored records. This arbitrary demo flag is not a statistical sufficiency test."
+        ],
+        "rows": [
+          {
+            "id": "demo-a",
+            "score": 0.9,
+            "predictedPositive": true,
+            "status": "scored",
+            "label": true,
+            "cell": "tp",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-b",
+            "score": 0.7,
+            "predictedPositive": true,
+            "status": "scored",
+            "label": true,
+            "cell": "tp",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-c",
+            "score": 0.6,
+            "predictedPositive": true,
+            "status": "scored",
+            "label": false,
+            "cell": "fp",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-d",
+            "score": 0.2,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-e",
+            "score": 0.4,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": true,
+            "cell": "fn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-f",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-g",
+            "score": 0.8,
+            "predictedPositive": true,
+            "status": "scored",
+            "label": true,
+            "cell": "tp",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-h",
+            "score": 0.55,
+            "predictedPositive": true,
+            "status": "scored",
+            "label": false,
+            "cell": "fp",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-i",
+            "score": 0.65,
+            "predictedPositive": true,
+            "status": "pending",
+            "label": null,
+            "cell": null,
+            "reason": "The outcome window is still open; no eligible known label."
+          },
+          {
+            "id": "demo-j",
+            "score": 0.3,
+            "predictedPositive": false,
+            "status": "unlabelled",
+            "label": null,
+            "cell": null,
+            "reason": "The window closed without an eligible known outcome at this cutoff."
+          },
+          {
+            "id": "demo-k",
+            "score": 0.9,
+            "predictedPositive": true,
+            "status": "pending",
+            "label": null,
+            "cell": null,
+            "reason": "The outcome window is still open; no eligible known label."
+          },
+          {
+            "id": "demo-l",
+            "score": 0.15,
+            "predictedPositive": false,
+            "status": "pending",
+            "label": null,
+            "cell": null,
+            "reason": "The outcome window is still open; no eligible known label."
+          },
+          {
+            "id": "demo-m",
+            "score": 0.5,
+            "predictedPositive": null,
+            "status": "excluded",
+            "label": null,
+            "cell": null,
+            "reason": "Prediction occurs after the evaluation cutoff."
+          }
+        ]
+      }
+    },
+    {
+      "dataset": "imbalanced",
+      "report": {
+        "synthetic": true,
+        "notice": "Synthetic predictions and outcomes only. No real model performance, client results or LLM calls.",
+        "policy": "synthetic-binary-eval-v1",
+        "asOf": "2026-01-15",
+        "threshold": 0.5,
+        "inputFingerprint": "6b85bbc61240af8515d3ade0ae856437000b4ae8660df4a8d44e94bced0793aa",
+        "counts": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 19,
+          "fn": 1,
+          "pending": 0,
+          "unlabelled": 0,
+          "excluded": 0
+        },
+        "scored": 20,
+        "total": 20,
+        "eligible": 20,
+        "metrics": {
+          "accuracy": {
+            "numerator": 19,
+            "denominator": 20,
+            "value": 0.95
+          },
+          "precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "recall": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0
+          },
+          "specificity": {
+            "numerator": 19,
+            "denominator": 19,
+            "value": 1
+          },
+          "f1": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0
+          },
+          "coverage": {
+            "numerator": 20,
+            "denominator": 20,
+            "value": 1
+          },
+          "majorityBaseline": {
+            "numerator": 19,
+            "denominator": 20,
+            "value": 0.95
+          }
+        },
+        "balancedAccuracy": 0.5,
+        "smallSample": true,
+        "warnings": [
+          "Small illustrative sample: fewer than 30 scored records. This arbitrary demo flag is not a statistical sufficiency test."
+        ],
+        "rows": [
+          {
+            "id": "demo-imb-0",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-1",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-10",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-11",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-12",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-13",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-14",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-15",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-16",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-17",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-18",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-19",
+            "score": 0.4,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": true,
+            "cell": "fn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-2",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-3",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-4",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-5",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-6",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-7",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-8",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-imb-9",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          }
+        ]
+      }
+    },
+    {
+      "dataset": "unlabelled",
+      "report": {
+        "synthetic": true,
+        "notice": "Synthetic predictions and outcomes only. No real model performance, client results or LLM calls.",
+        "policy": "synthetic-binary-eval-v1",
+        "asOf": "2026-01-15",
+        "threshold": 0.5,
+        "inputFingerprint": "eb11daa8e4a0d4d6133cb9a529f49c46c4b2a47df5ef7e082b6d6ae2c9a45df5",
+        "counts": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "pending": 0,
+          "unlabelled": 4,
+          "excluded": 0
+        },
+        "scored": 0,
+        "total": 4,
+        "eligible": 4,
+        "metrics": {
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "specificity": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "coverage": {
+            "numerator": 0,
+            "denominator": 4,
+            "value": 0
+          },
+          "majorityBaseline": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        },
+        "balancedAccuracy": null,
+        "smallSample": true,
+        "warnings": [
+          "Small illustrative sample: fewer than 30 scored records. This arbitrary demo flag is not a statistical sufficiency test.",
+          "No eligible labels: performance metrics are undefined."
+        ],
+        "rows": [
+          {
+            "id": "demo-unknown-0",
+            "score": 0.2,
+            "predictedPositive": false,
+            "status": "unlabelled",
+            "label": null,
+            "cell": null,
+            "reason": "The window closed without an eligible known outcome at this cutoff."
+          },
+          {
+            "id": "demo-unknown-1",
+            "score": 0.4,
+            "predictedPositive": false,
+            "status": "unlabelled",
+            "label": null,
+            "cell": null,
+            "reason": "The window closed without an eligible known outcome at this cutoff."
+          },
+          {
+            "id": "demo-unknown-2",
+            "score": 0.7,
+            "predictedPositive": true,
+            "status": "unlabelled",
+            "label": null,
+            "cell": null,
+            "reason": "The window closed without an eligible known outcome at this cutoff."
+          },
+          {
+            "id": "demo-unknown-3",
+            "score": 0.9,
+            "predictedPositive": true,
+            "status": "unlabelled",
+            "label": null,
+            "cell": null,
+            "reason": "The window closed without an eligible known outcome at this cutoff."
+          }
+        ]
+      }
+    },
+    {
+      "dataset": "positive-only",
+      "report": {
+        "synthetic": true,
+        "notice": "Synthetic predictions and outcomes only. No real model performance, client results or LLM calls.",
+        "policy": "synthetic-binary-eval-v1",
+        "asOf": "2026-01-15",
+        "threshold": 0.5,
+        "inputFingerprint": "e30e44816bed67c8a9f588898a44773614fc2743abe145bb720cc664031159a5",
+        "counts": {
+          "tp": 2,
+          "fp": 0,
+          "tn": 0,
+          "fn": 2,
+          "pending": 0,
+          "unlabelled": 0,
+          "excluded": 0
+        },
+        "scored": 4,
+        "total": 4,
+        "eligible": 4,
+        "metrics": {
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 4,
+            "value": 0.5
+          },
+          "precision": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1
+          },
+          "recall": {
+            "numerator": 2,
+            "denominator": 4,
+            "value": 0.5
+          },
+          "specificity": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "f1": {
+            "numerator": 4,
+            "denominator": 6,
+            "value": 0.6666666666666666
+          },
+          "coverage": {
+            "numerator": 4,
+            "denominator": 4,
+            "value": 1
+          },
+          "majorityBaseline": {
+            "numerator": 4,
+            "denominator": 4,
+            "value": 1
+          }
+        },
+        "balancedAccuracy": null,
+        "smallSample": true,
+        "warnings": [
+          "Small illustrative sample: fewer than 30 scored records. This arbitrary demo flag is not a statistical sufficiency test.",
+          "Only one true class is represented; balanced accuracy is undefined."
+        ],
+        "rows": [
+          {
+            "id": "demo-pos-0",
+            "score": 0.2,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": true,
+            "cell": "fn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-pos-1",
+            "score": 0.4,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": true,
+            "cell": "fn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-pos-2",
+            "score": 0.8,
+            "predictedPositive": true,
+            "status": "scored",
+            "label": true,
+            "cell": "tp",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-pos-3",
+            "score": 0.9,
+            "predictedPositive": true,
+            "status": "scored",
+            "label": true,
+            "cell": "tp",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          }
+        ]
+      }
+    },
+    {
+      "dataset": "mixed-later-cutoff",
+      "report": {
+        "synthetic": true,
+        "notice": "Synthetic predictions and outcomes only. No real model performance, client results or LLM calls.",
+        "policy": "synthetic-binary-eval-v1",
+        "asOf": "2026-02-15",
+        "threshold": 0.5,
+        "inputFingerprint": "e28d6527fe61bce6d285d088ebe99b2ced6c8bf61990bcd6d913d2b78ace9aff",
+        "counts": {
+          "tp": 4,
+          "fp": 2,
+          "tn": 2,
+          "fn": 1,
+          "pending": 1,
+          "unlabelled": 3,
+          "excluded": 0
+        },
+        "scored": 9,
+        "total": 13,
+        "eligible": 13,
+        "metrics": {
+          "accuracy": {
+            "numerator": 6,
+            "denominator": 9,
+            "value": 0.6666666666666666
+          },
+          "precision": {
+            "numerator": 4,
+            "denominator": 6,
+            "value": 0.6666666666666666
+          },
+          "recall": {
+            "numerator": 4,
+            "denominator": 5,
+            "value": 0.8
+          },
+          "specificity": {
+            "numerator": 2,
+            "denominator": 4,
+            "value": 0.5
+          },
+          "f1": {
+            "numerator": 8,
+            "denominator": 11,
+            "value": 0.7272727272727273
+          },
+          "coverage": {
+            "numerator": 9,
+            "denominator": 13,
+            "value": 0.6923076923076923
+          },
+          "majorityBaseline": {
+            "numerator": 5,
+            "denominator": 9,
+            "value": 0.5555555555555556
+          }
+        },
+        "balancedAccuracy": 0.65,
+        "smallSample": true,
+        "warnings": [
+          "Small illustrative sample: fewer than 30 scored records. This arbitrary demo flag is not a statistical sufficiency test."
+        ],
+        "rows": [
+          {
+            "id": "demo-a",
+            "score": 0.9,
+            "predictedPositive": true,
+            "status": "scored",
+            "label": true,
+            "cell": "tp",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-b",
+            "score": 0.7,
+            "predictedPositive": true,
+            "status": "scored",
+            "label": true,
+            "cell": "tp",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-c",
+            "score": 0.6,
+            "predictedPositive": true,
+            "status": "scored",
+            "label": false,
+            "cell": "fp",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-d",
+            "score": 0.2,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-e",
+            "score": 0.4,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": true,
+            "cell": "fn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-f",
+            "score": 0.1,
+            "predictedPositive": false,
+            "status": "scored",
+            "label": false,
+            "cell": "tn",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-g",
+            "score": 0.8,
+            "predictedPositive": true,
+            "status": "scored",
+            "label": true,
+            "cell": "tp",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-h",
+            "score": 0.55,
+            "predictedPositive": true,
+            "status": "scored",
+            "label": false,
+            "cell": "fp",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-i",
+            "score": 0.65,
+            "predictedPositive": true,
+            "status": "unlabelled",
+            "label": null,
+            "cell": null,
+            "reason": "The window closed without an eligible known outcome at this cutoff."
+          },
+          {
+            "id": "demo-j",
+            "score": 0.3,
+            "predictedPositive": false,
+            "status": "unlabelled",
+            "label": null,
+            "cell": null,
+            "reason": "The window closed without an eligible known outcome at this cutoff."
+          },
+          {
+            "id": "demo-k",
+            "score": 0.9,
+            "predictedPositive": true,
+            "status": "scored",
+            "label": true,
+            "cell": "tp",
+            "reason": "Outcome is within its window and was recorded by the cutoff."
+          },
+          {
+            "id": "demo-l",
+            "score": 0.15,
+            "predictedPositive": false,
+            "status": "unlabelled",
+            "label": null,
+            "cell": null,
+            "reason": "The outcome falls outside the allowed window."
+          },
+          {
+            "id": "demo-m",
+            "score": 0.5,
+            "predictedPositive": true,
+            "status": "pending",
+            "label": null,
+            "cell": null,
+            "reason": "The outcome window is still open; no eligible known label."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+
+> ai-evaluation-lab@1.0.0 test
+> node --test test/*.test.js
+
+✔ mixed fixture has independently specified confusion counts and coverage (6.828875ms)
+✔ higher threshold trades recall for precision on fixed fixture (0.454417ms)
+✔ threshold comparison is inclusive (0.500333ms)
+✔ zero threshold predicts all eligible records positive (0.309833ms)
+✔ one threshold gives undefined precision with no predicted positives (0.247542ms)
+✔ imbalanced fixture exposes majority baseline despite high accuracy (0.310375ms)
+✔ no eligible labels means undefined performance, not zero accuracy (0.254333ms)
+✔ one true class leaves specificity and balanced accuracy undefined (0.269541ms)
+✔ future recorded outcome cannot score at earlier cutoff (0.297916ms)
+✔ advancing cutoff reveals only eligible recorded outcome (1.530709ms)
+✔ missing outcome is not a true negative (0.300625ms)
+✔ future prediction excluded from coverage denominator (0.294125ms)
+✔ outcome and recorded dates exactly at cutoff are eligible (0.282792ms)
+✔ window boundary is inclusive (0.297833ms)
+✔ closed-window outcome recorded after cutoff remains unlabelled (0.205375ms)
+✔ evaluating twice is deterministic and leaves input unchanged (0.436125ms)
+✔ record order does not change report or fingerprint (0.34575ms)
+✔ threshold and cutoff are bound into report fingerprint (0.588792ms)
+✔ empty dataset leaves all metrics undefined including coverage (0.1305ms)
+✔ refuses negative threshold (0.263ms)
+✔ refuses over-one threshold (0.045125ms)
+✔ refuses NaN threshold (0.037125ms)
+✔ refuses string threshold (0.034084ms)
+✔ refuses infinite score (0.041916ms)
+✔ refuses negative score (0.032042ms)
+✔ refuses over-one score (0.030125ms)
+✔ refuses string score (0.031875ms)
+✔ refuses invalid label (0.042042ms)
+✔ refuses real-data flag (0.036875ms)
+✔ refuses duplicate ID (0.039458ms)
+✔ refuses free text ID (0.029042ms)
+✔ refuses invalid calendar date (0.048625ms)
+✔ refuses inverted window (0.033625ms)
+✔ refuses outcome before prediction (0.04ms)
+✔ refuses recorded before observation (0.034292ms)
+✔ refuses extra field (0.144792ms)
+✔ refuses missing label field (0.039083ms)
+✔ refuses too many rows (0.034333ms)
+✔ future outcome value does not affect earlier visible rows or metrics (2.095125ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 62.975625

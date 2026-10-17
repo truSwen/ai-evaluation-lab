@@ -1,0 +1,1 @@
+{"name":"ai-evaluation-lab","version":"1.0.0","private":true,"type":"module","description":"Browser-only synthetic binary evaluation lab with explicit label eligibility and metric denominators.","engines":{"node":">=22"},"scripts":{"test":"node --test test/*.test.js","start":"node web.js","demo":"node example.js","build":"node build.js"}}
